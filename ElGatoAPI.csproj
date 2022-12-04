@@ -1,0 +1,39 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Swashbuckle.AspNetCore" Version="6.4.0" />
+    <PackageReference Include="MongoDB.Driver" Version="2.18.0" />
+    <PackageReference Include="MongoDB.Driver.Core" Version="2.18.0" />
+    <PackageReference Include="MongoDB.Driver.GridFS" Version="2.18.0" />
+    <PackageReference Include="RestSharp" Version="108.0.2" />
+    <PackageReference Include="Newtonsoft.Json" Version="13.0.2" />
+    <PackageReference Include="Newtonsoft.Json.Bson" Version="1.0.2" />
+    <PackageReference Include="Newtonsoft.Json.Schema" Version="3.0.14" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="Services\" />
+    <None Remove="Models\" />
+    <None Remove="MongoDB.Driver" />
+    <None Remove="MongoDB.Driver.Core" />
+    <None Remove="MongoDB.Driver.GridFS" />
+    <None Remove="Services\APIService\" />
+    <None Remove="RestSharp" />
+    <None Remove="Models\Remote\" />
+    <None Remove="Newtonsoft.Json" />
+    <None Remove="Newtonsoft.Json.Bson" />
+    <None Remove="Newtonsoft.Json.Schema" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Services\" />
+    <Folder Include="Models\" />
+    <Folder Include="Services\APIService\" />
+    <Folder Include="Models\Remote\" />
+  </ItemGroup>
+</Project>

@@ -1,0 +1,32 @@
+﻿<Properties StartupConfiguration="{2764F307-08B5-46B9-B618-63AABDCA2501}|Default">
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MultiItemStartupConfigurations />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.Workbench>
+    <Files>
+      <File FileName="Models/Breed.cs" />
+      <File FileName="Controllers/BreedsController.cs" Line="1" Column="1" />
+      <File FileName="appsettings.json" />
+      <File FileName="Program.cs" />
+      <File FileName="Services/BreedsService.cs" Line="39" Column="60" />
+      <File FileName="WeatherForecast.cs" />
+      <File FileName="Models/CatDatabaseSettings.cs" />
+      <File FileName="Services/APIService/ApiService.cs" Line="16" Column="34" />
+      <File FileName="Models/Remote/RemoteBreed.cs" />
+      <File FileName="Models/Remote/RemoteBreedResponse.cs" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="ElGatoAPI" expanded="True">
+            <Node name="ElGatoAPI" expanded="True" selected="True" />
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.ItemProperties.ElGatoAPI PreferredExecutionTarget="/Applications/Google Chrome.app" />
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+</Properties>
