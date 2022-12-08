@@ -1,6 +1,7 @@
-﻿using ElGatoAPI.Services;
+﻿using ElGatoAPI.Models;
+using ElGatoAPI.Services;
 using Microsoft.AspNetCore.Mvc;
-using ElGatoAPI.Models;
+
 namespace ElGatoAPI.Controllers;
 
 
@@ -8,18 +9,28 @@ namespace ElGatoAPI.Controllers;
 [Route("api/[controller]")]
 public class BreedsController : ControllerBase
 {
+
+
     private readonly BreedsService _breedService;
 
-    public BreedsController(BreedsService breedsService) =>
+    public BreedsController(BreedsService breedsService)
+    {
         _breedService = breedsService;
 
-    [HttpGet]
-    public async Task<List<Breed>> Get() =>
-        await _breedService.GetAsync();
+    }
 
-    [HttpGet("{id:length(24)}")]
+
+
+
+
+
+    [HttpGet]
+    public async Task<List<Breed>> Get() => await _breedService.GetAsync();
+
+    [HttpGet("{id:length(4)}")]
     public async Task<ActionResult<Breed>> Get(string id)
     {
+
         var breed = await _breedService.GetAsync(id);
 
         if (breed is null)
@@ -38,7 +49,7 @@ public class BreedsController : ControllerBase
         return CreatedAtAction(nameof(Get), new { id = newBreed.Id }, newBreed);
     }
 
-    [HttpPut("{id:length(24)}")]
+    [HttpPut("{id:length(4)}")]
     public async Task<IActionResult> Update(string id, Breed updatedBreed)
     {
         var breed = await _breedService.GetAsync(id);
@@ -55,7 +66,7 @@ public class BreedsController : ControllerBase
         return NoContent();
     }
 
-    [HttpDelete("{id:length(24)}")]
+    [HttpDelete("{id:length(4)}")]
     public async Task<IActionResult> Delete(string id)
     {
         var breed = await _breedService.GetAsync(id);
