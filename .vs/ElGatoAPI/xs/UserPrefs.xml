@@ -1,32 +1,34 @@
 ﻿<Properties StartupConfiguration="{2764F307-08B5-46B9-B618-63AABDCA2501}|Default">
-  <MonoDevelop.Ide.DebuggingService.Breakpoints>
-    <BreakpointStore />
-  </MonoDevelop.Ide.DebuggingService.Breakpoints>
-  <MultiItemStartupConfigurations />
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.ItemProperties.ElGatoAPI PreferredExecutionTarget="/Applications/Google Chrome.app" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Controllers/BreedsController.cs">
     <Files>
-      <File FileName="Models/Breed.cs" />
       <File FileName="Controllers/BreedsController.cs" Line="1" Column="1" />
-      <File FileName="appsettings.json" />
-      <File FileName="Program.cs" />
-      <File FileName="Services/BreedsService.cs" Line="39" Column="60" />
-      <File FileName="WeatherForecast.cs" />
-      <File FileName="Models/CatDatabaseSettings.cs" />
-      <File FileName="Services/APIService/ApiService.cs" Line="16" Column="34" />
-      <File FileName="Models/Remote/RemoteBreed.cs" />
-      <File FileName="Models/Remote/RemoteBreedResponse.cs" />
+      <File FileName="Services/BreedsService.cs" />
+      <File FileName="Models/Breed.cs" />
+      <File FileName="Services/APIService/ApiService.cs" />
+      <File FileName="dockerfile" Line="16" Column="31" />
+      <File FileName="Properties/launchSettings.json" Line="8" Column="23" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
           <Node name="ElGatoAPI" expanded="True">
-            <Node name="ElGatoAPI" expanded="True" selected="True" />
+            <Node name="ElGatoAPI" expanded="True">
+              <Node name="Controllers" expanded="True">
+                <Node name="BreedsController.cs" selected="True" />
+              </Node>
+              <Node name="Properties" expanded="True" />
+              <Node name="Services" expanded="True" />
+            </Node>
           </Node>
         </State>
       </Pad>
     </Pads>
   </MonoDevelop.Ide.Workbench>
-  <MonoDevelop.Ide.ItemProperties.ElGatoAPI PreferredExecutionTarget="/Applications/Google Chrome.app" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MultiItemStartupConfigurations />
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
 </Properties>

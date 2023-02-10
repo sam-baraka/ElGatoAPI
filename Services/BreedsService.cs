@@ -1,12 +1,11 @@
-﻿using System;
-using ElGatoAPI.Models;
+﻿using ElGatoAPI.Models;
 using Microsoft.Extensions.Options;
 using MongoDB.Driver;
 
 namespace ElGatoAPI.Services
 {
-	public class BreedsService
-	{
+    public class BreedsService
+    {
 
         private readonly IMongoCollection<Breed> _breedCollection;
 
@@ -20,17 +19,50 @@ namespace ElGatoAPI.Services
             var mongoDatabase = mongoClient.GetDatabase(
                 catDatabaseSettings.Value.DatabaseName);
 
+
             _breedCollection = mongoDatabase.GetCollection<Breed>(
                 catDatabaseSettings.Value.BreedsCollectionName);
         }
 
+        public async Task FetchAndStoreBreeds() {
+            TheCatApiService theCatApiService = new TheCatApiService();
+            List<RemoteBreed>? breeds = await theCatApiService.GetBreeds();
+            if (breeds is not null)
+            {
+                foreach (var breed in breeds)
+                {
+                    Breed newBreed = new()
+                    {
+                        BreedName = breed.BreedName!,
+                        BreedDescription = breed.BreedDescription!,
+                    };
+                    // Add if not exists
+                    if (await GetAsyncWithName(breed.BreedName!) is null)
+                    {
+                        await CreateAsync(newBreed);
+                    }
+                }
+            }
+        }
 
-        
-        public async Task<List<Breed>> GetAsync() =>
-            await _breedCollection.Find(_ => true).ToListAsync();
 
-        public async Task<Breed?> GetAsync(string id) =>
+
+        public async Task<List<Breed>> GetAsync() {
+
+            var breeds=await _breedCollection.Find(_ => true).ToListAsync();
+            if (breeds.Count < 5)
+            {
+               await FetchAndStoreBreeds();
+            }
+            return breeds;
+    }
+   
+
+    public async Task<Breed?> GetAsync(string id) =>
             await _breedCollection.Find(x => x.Id == id).FirstOrDefaultAsync();
+
+        public async Task<Breed?> GetAsyncWithName(string name) =>
+            await _breedCollection.Find(x => x.BreedName == name).FirstOrDefaultAsync();
 
         public async Task CreateAsync(Breed newBreed) =>
             await _breedCollection.InsertOneAsync(newBreed);

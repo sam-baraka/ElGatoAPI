@@ -11,10 +11,8 @@ namespace ElGatoAPI.Models
 
             [BsonElement("Name")]
             public string BreedName { get; set; } = null!;
-            [BsonElement("Description")]
+        [BsonElement("Description")]
             public string BreedDescription { get; set; } = null!;
-            [BsonElement("Image")]
-            public string BreedImage { get; set; } = null!;
         
     }
 }
