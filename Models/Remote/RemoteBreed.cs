@@ -2,20 +2,20 @@
 using Newtonsoft.Json;
 
 
-namespace ElGatoAPI.Models.Remote
+namespace ElGatoAPI.Models
 {
 	public class RemoteBreed
 	{
         [JsonProperty("id")]
         public String? Id { get; set; }
         [JsonProperty("name")]
-        String? BreedName { get; set; }
+        public String? BreedName { get; set; }
         [JsonProperty("description")]
-        String? BreedDescription { get; set; }
+        public String? BreedDescription { get; set; }
         [JsonProperty("wikipedia_url")]
-        String? WikipediaUrl { get; set; }
+        public String? WikipediaUrl { get; set; }
         [JsonProperty("image")]
-        BreedImage? BreedImage { get; set; }
+        public BreedImage? BreedImage { get; set; }
 
     }
 
