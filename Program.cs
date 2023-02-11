@@ -13,9 +13,11 @@ builder.Services.AddSwaggerGen();
 builder.Services.Configure<CatDatabaseSettings>(
     builder.Configuration.GetSection("CatsDatabase"));
 builder.Services.Configure<CatApiSettings>(
-    builder.Configuration.GetSection("CatApi"));
+    builder.Configuration.GetSection("CatAPI"));
 
 builder.Services.AddSingleton<BreedsService>();
+
+builder.Services.AddSingleton<ApiService>();
 // Json serializer settings
 builder.Services.AddControllers()
     .AddJsonOptions(
@@ -38,5 +40,8 @@ app.UseAuthorization();
 
 app.MapControllers();
 
+
 app.Run();
+
+
 
