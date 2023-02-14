@@ -1,5 +1,3 @@
-using Microsoft.Extensions.Options;
-using RestSharp;
 using ElGatoAPI.Models;
 using Newtonsoft.Json;
 
