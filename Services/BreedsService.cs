@@ -6,10 +6,7 @@ namespace ElGatoAPI.Services
 {
     public class BreedsService
     {
-
         private readonly IMongoCollection<Breed> _breedCollection;
-
-
         public BreedsService(
             IOptions<CatDatabaseSettings> catDatabaseSettings)
         {
@@ -23,7 +20,6 @@ namespace ElGatoAPI.Services
             _breedCollection = mongoDatabase.GetCollection<Breed>(
                 catDatabaseSettings.Value.BreedsCollectionName);
         }
-
         public async Task FetchAndStoreBreeds() {
             TheCatApiService theCatApiService = new TheCatApiService();
             List<RemoteBreed>? breeds = await theCatApiService.GetBreeds();
@@ -35,6 +31,16 @@ namespace ElGatoAPI.Services
                     {
                         BreedName = breed.BreedName!,
                         BreedDescription = breed.BreedDescription!,
+                        Origin = breed.Origin!,
+                        Temperament = breed.Temperament!,
+                        LifeSpan = breed.LifeSpan!,
+                        Indoor = breed.Indoor!,
+                        Lap = breed.Lap!,
+                        CountryCode = breed.CountryCode!,
+                        CountryCodes = breed.CountryCodes!,
+                        WikipediaUrl = breed.WikipediaUrl!,
+                        VetstreetUrl = breed.VetstreetUrl!,
+                        VCAHospitalsUrl = breed.VCAHospitalsUrl!,
                     };
                     // Add if not exists
                     if (await GetAsyncWithName(breed.BreedName!) is null)
@@ -44,9 +50,6 @@ namespace ElGatoAPI.Services
                 }
             }
         }
-
-
-
         public async Task<List<Breed>> GetAsync() {
 
             var breeds=await _breedCollection.Find(_ => true).ToListAsync();
@@ -56,9 +59,7 @@ namespace ElGatoAPI.Services
             }
             return breeds;
     }
-   
-
-    public async Task<Breed?> GetAsync(string id) =>
+        public async Task<Breed?> GetAsync(string id) =>
             await _breedCollection.Find(x => x.Id == id).FirstOrDefaultAsync();
 
         public async Task<Breed?> GetAsyncWithName(string name) =>
