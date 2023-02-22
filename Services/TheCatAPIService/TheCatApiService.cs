@@ -12,5 +12,12 @@ namespace ElGatoAPI.Services
             var breeds = JsonConvert.DeserializeObject<List<RemoteBreed>>(response);
             return breeds;
         }
+
+        public async Task<List<RemoteImage>?> GetImages()
+        {
+            var response = await ApiService.GetData("images/search");
+            var images = JsonConvert.DeserializeObject<List<RemoteImage>>(response);
+            return images;
+        }
     }
 }
