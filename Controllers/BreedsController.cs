@@ -10,7 +10,6 @@ namespace ElGatoAPI.Controllers;
 public class BreedsController : ControllerBase
 {
 
-
     private readonly BreedsService _breedService;
 
     public BreedsController(BreedsService breedsService)
@@ -18,11 +17,6 @@ public class BreedsController : ControllerBase
         _breedService = breedsService;
 
     }
-
-
-
-
-
 
     [HttpGet]
     public async Task<List<Breed>> Get() => await _breedService.GetAsync();
