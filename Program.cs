@@ -17,6 +17,8 @@ builder.Services.Configure<CatApiSettings>(
 
 builder.Services.AddSingleton<BreedsService>();
 
+builder.Services.AddSingleton<ImagesService>();
+
 builder.Services.AddSingleton<ApiService>();
 // Json serializer settings
 builder.Services.AddControllers()
