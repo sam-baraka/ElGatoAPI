@@ -3,12 +3,10 @@ using Microsoft.Extensions.Options;
 using MongoDB.Driver;
 
 namespace ElGatoAPI.Services
-{ 
-        
+{        
     public class ImagesService
     {
         private readonly IMongoCollection<CatImage> _imagesCollection;
-
         public ImagesService(
             IOptions<CatDatabaseSettings> catDatabaseSettings)
         {
@@ -45,7 +43,7 @@ namespace ElGatoAPI.Services
             }
         }
 
-             public async Task<List<CatImage>> GetAsync() {
+            public async Task<List<CatImage>> GetAsync() {
 
             var images=await _imagesCollection.Find(_ => true).ToListAsync();
             if (images.Count < 5)
@@ -54,8 +52,7 @@ namespace ElGatoAPI.Services
             }
             return images;
     }
-
-         public async Task<CatImage?> GetAsync(string id) =>
+             public async Task<CatImage?> GetAsync(string id) =>
             await _imagesCollection.Find(x => x.Id == id).FirstOrDefaultAsync();
 
               public async Task<CatImage?> GetAsyncWithUrl(string url) =>
@@ -69,7 +66,5 @@ namespace ElGatoAPI.Services
 
         public async Task RemoveAsync(string id) =>
             await _imagesCollection.DeleteOneAsync(x => x.Id == id);
-
-
     }
 }
