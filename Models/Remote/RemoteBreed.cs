@@ -27,7 +27,7 @@ namespace ElGatoAPI.Models
 
         [JsonProperty("life_span")]
         public String? LifeSpan { get; set; }
-
+ 
         [JsonProperty("indoor")]
         public int? Indoor { get; set; }
 
