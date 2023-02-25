@@ -1,13 +1,19 @@
 ﻿<Properties StartupConfiguration="{2764F307-08B5-46B9-B618-63AABDCA2501}|Default">
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
-    <BreakpointStore />
+    <BreakpointStore>
+      <Breakpoint file="/Users/sababuvercetti/Projects/ElGatoAPI/Services/TheCatAPIService/TheCatApiService.cs" relfile="Services/TheCatAPIService/TheCatApiService.cs" line="11" column="1" />
+      <Breakpoint file="/Users/sababuvercetti/Projects/ElGatoAPI/Services/TheCatAPIService/TheCatApiService.cs" relfile="Services/TheCatAPIService/TheCatApiService.cs" line="12" column="1" />
+    </BreakpointStore>
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
-  <MonoDevelop.Ide.ItemProperties.ElGatoAPI PreferredExecutionTarget="/Applications/Google Chrome.app" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Services/APIService/ApiService.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Services/TheCatAPIService/TheCatApiService.cs">
     <Files>
       <File FileName="Models/Breed.cs" />
       <File FileName="Models/CatDatabaseSettings.cs" />
-      <File FileName="Services/APIService/ApiService.cs" Line="1" Column="1" />
+      <File FileName="Services/APIService/ApiService.cs" />
+      <File FileName="Program.cs" />
+      <File FileName="appsettings.json" />
+      <File FileName="Services/BreedsService.cs" />
+      <File FileName="Services/TheCatAPIService/TheCatApiService.cs" Line="12" Column="1" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
@@ -17,6 +23,7 @@
               <Node name="Models" expanded="True" />
               <Node name="Services" expanded="True">
                 <Node name="APIService" expanded="True" />
+                <Node name="TheCatAPIService" expanded="True" />
               </Node>
             </Node>
           </Node>
@@ -24,6 +31,7 @@
       </Pad>
     </Pads>
   </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.ItemProperties.ElGatoAPI PreferredExecutionTarget="/Applications/Google Chrome.app" />
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
   <MultiItemStartupConfigurations />
