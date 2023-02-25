@@ -11,6 +11,8 @@ class ApiService
     public static async Task<String> GetData(String path)
     {
         var request = new RestRequest(path,Method.Get);
+        // Add query parameter
+        request.AddQueryParameter("limit", "100");
         var response = await client.ExecuteAsync(request);
         return response.Content!;
     }
