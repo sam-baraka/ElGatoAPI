@@ -1,30 +1,31 @@
 ﻿<Properties StartupConfiguration="{2764F307-08B5-46B9-B618-63AABDCA2501}|Default">
-  <MonoDevelop.Ide.DebuggingService.Breakpoints>
-    <BreakpointStore>
-      <Breakpoint file="/Users/sababuvercetti/Projects/ElGatoAPI/Services/TheCatAPIService/TheCatApiService.cs" relfile="Services/TheCatAPIService/TheCatApiService.cs" line="11" column="1" />
-      <Breakpoint file="/Users/sababuvercetti/Projects/ElGatoAPI/Services/TheCatAPIService/TheCatApiService.cs" relfile="Services/TheCatAPIService/TheCatApiService.cs" line="12" column="1" />
-    </BreakpointStore>
-  </MonoDevelop.Ide.DebuggingService.Breakpoints>
-  <MonoDevelop.Ide.Workbench ActiveDocument="Services/TheCatAPIService/TheCatApiService.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Program.cs">
     <Files>
       <File FileName="Models/Breed.cs" />
       <File FileName="Models/CatDatabaseSettings.cs" />
-      <File FileName="Services/APIService/ApiService.cs" />
-      <File FileName="Program.cs" />
+      <File FileName="Services/APIService/ApiService.cs" Line="24" Column="55" />
+      <File FileName="Program.cs" Line="1" Column="1" />
       <File FileName="appsettings.json" />
-      <File FileName="Services/BreedsService.cs" />
-      <File FileName="Services/TheCatAPIService/TheCatApiService.cs" Line="12" Column="1" />
+      <File FileName="Services/BreedsService.cs" Line="79" Column="1" />
+      <File FileName="Services/TheCatAPIService/TheCatApiService.cs" Line="23" Column="1" />
+      <File FileName="Models/CatImage.cs" Line="1" Column="1" />
+      <File FileName="Models/TheCatAPI/CatApi.cs" Line="1" Column="1" />
+      <File FileName="Services/ImagesService.cs" Line="25" Column="69" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
           <Node name="ElGatoAPI" expanded="True">
             <Node name="ElGatoAPI" expanded="True">
-              <Node name="Models" expanded="True" />
+              <Node name="Models" expanded="True">
+                <Node name="Remote" expanded="True" />
+                <Node name="TheCatAPI" expanded="True" />
+              </Node>
               <Node name="Services" expanded="True">
                 <Node name="APIService" expanded="True" />
                 <Node name="TheCatAPIService" expanded="True" />
               </Node>
+              <Node name="Program.cs" selected="True" />
             </Node>
           </Node>
         </State>
@@ -32,7 +33,10 @@
     </Pads>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.ItemProperties.ElGatoAPI PreferredExecutionTarget="/Applications/Google Chrome.app" />
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Release" />
   <MultiItemStartupConfigurations />
 </Properties>
