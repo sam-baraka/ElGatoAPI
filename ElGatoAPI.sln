@@ -5,6 +5,8 @@ VisualStudioVersion = 25.0.1703.8
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ElGatoAPI", "ElGatoAPI.csproj", "{2764F307-08B5-46B9-B618-63AABDCA2501}"
 EndProject
+Project("{E53339B2-1760-4266-BCC7-CA923CBCF16C}") = "docker-compose", "docker-compose.dcproj", "{5FFC99F4-9F3D-4708-BAF1-0F7960CCFA2C}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{2764F307-08B5-46B9-B618-63AABDCA2501}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{2764F307-08B5-46B9-B618-63AABDCA2501}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{2764F307-08B5-46B9-B618-63AABDCA2501}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5FFC99F4-9F3D-4708-BAF1-0F7960CCFA2C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5FFC99F4-9F3D-4708-BAF1-0F7960CCFA2C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5FFC99F4-9F3D-4708-BAF1-0F7960CCFA2C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5FFC99F4-9F3D-4708-BAF1-0F7960CCFA2C}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

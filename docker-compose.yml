@@ -1,0 +1,8 @@
+version: '3.4'
+
+services:
+  elgatoapi:
+    image: ${DOCKER_REGISTRY-}elgatoapi
+    build:
+      context: .
+      dockerfile: ./Dockerfile
