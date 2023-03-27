@@ -1,46 +1,41 @@
 ﻿<Properties StartupConfiguration="{2764F307-08B5-46B9-B618-63AABDCA2501}|Default">
-  <MonoDevelop.Ide.ItemProperties.ElGatoAPI PreferredExecutionTarget="/Applications/Google Chrome.app" />
-  <MultiItemStartupConfigurations />
-  <MonoDevelop.Ide.DebuggingService.Breakpoints>
-    <BreakpointStore />
-  </MonoDevelop.Ide.DebuggingService.Breakpoints>
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Release" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="appsettings.json">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Models/Remote/RemoteBreed.cs">
     <Files>
       <File FileName="Models/Breed.cs" />
       <File FileName="Models/CatDatabaseSettings.cs" />
       <File FileName="Services/APIService/ApiService.cs" />
       <File FileName="Program.cs" />
-      <File FileName="appsettings.json" Line="3" Column="53" />
-      <File FileName="Services/BreedsService.cs" />
       <File FileName="Services/TheCatAPIService/TheCatApiService.cs" />
       <File FileName="Models/CatImage.cs" />
       <File FileName="Models/TheCatAPI/CatApi.cs" />
       <File FileName="Services/ImagesService.cs" />
-      <File FileName="Dockerfile" Line="10" Column="31" />
-      <File FileName=".dockerignore" />
-      <File FileName="docker-compose.yml" />
+      <File FileName="Models/Remote/RemoteBreed.cs" Line="11" Column="31" />
+      <File FileName="Controllers/BreedsController.cs" />
+      <File FileName="Properties/PublishProfiles/ElGatoAPI - Docker.pubxml" />
+      <File FileName="Properties/launchSettings.json" />
+      <File FileName="Services/BreedsService.cs" />
+      <File FileName="Dockerfile" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
           <Node name="ElGatoAPI" expanded="True">
-            <Node name="ElGatoAPI" expanded="True">
+            <Node name="ElGatoAPI" expanded="True" selected="True">
               <Node name="Models" expanded="True">
                 <Node name="Remote" expanded="True" />
-                <Node name="TheCatAPI" expanded="True" />
               </Node>
-              <Node name="Services" expanded="True">
-                <Node name="APIService" expanded="True" />
-                <Node name="TheCatAPIService" expanded="True" />
-              </Node>
-              <Node name="appsettings.json" selected="True" />
+              <Node name="Services" expanded="True" />
             </Node>
           </Node>
         </State>
       </Pad>
     </Pads>
   </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
-  <MonoDevelop.Ide.ItemProperties.docker-compose PreferredExecutionTarget="MonoDevelop.Default" />
+  <MonoDevelop.Ide.ItemProperties.ElGatoAPI PreferredExecutionTarget="/Applications/Google Chrome.app" />
+  <MultiItemStartupConfigurations />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
 </Properties>

@@ -19,5 +19,4 @@ RUN dotnet publish "ElGatoAPI.csproj" -c Release -o /app/publish /p:UseAppHost=f
 FROM base AS final
 WORKDIR /app
 COPY --from=publish /app/publish .
-# ENTRYPOINT ["dotnet", "ElGatoAPI.dll"]
-CMD ASPNETCORE_URLS=http://*:$PORT dotnet ElGatoAPI.dll
+ENTRYPOINT ["dotnet", "ElGatoAPI.dll"]

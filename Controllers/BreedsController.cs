@@ -19,7 +19,12 @@ public class BreedsController : ControllerBase
     }
 
     [HttpGet]
-    public async Task<List<Breed>> Get() => await _breedService.GetAsync();
+    public async Task<object> Get()
+    {
+        try { return await _breedService.GetAsync(); } catch(Exception e) {
+            return e.Message;
+        }
+    }
 
     [HttpGet("{id:length(4)}")]
     public async Task<ActionResult<Breed>> Get(string id)
