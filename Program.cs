@@ -19,6 +19,8 @@ builder.Services.AddSingleton<BreedsService>();
 
 builder.Services.AddSingleton<ImagesService>();
 
+builder.Services.AddSingleton<PostsService>();
+
 builder.Services.AddSingleton<ApiService>();
 // Json serializer settings
 builder.Services.AddControllers()
