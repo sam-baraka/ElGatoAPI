@@ -10,6 +10,8 @@ namespace ElGatoAPI.Models
         public string BreedsCollectionName { get; set; } = null!;
 
         public string ImagesCollectionName { get; set; } = null!;
+
+        public string PostsCollectionName { get; set; } = null!;
     }
 }
 
