@@ -4,7 +4,7 @@ using MongoDB.Driver;
 
 namespace ElGatoAPI.Services
 { 
-    class PostsService{
+   public class PostsService{
         private readonly IMongoCollection<Post> _postCollection;
         public PostsService(
             IOptions<CatDatabaseSettings> catDatabaseSettings)
